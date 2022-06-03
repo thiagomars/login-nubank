@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script/login.js"></script>
+    </head>
+    <body>
+        <div class="background-text">
+            <img src="img/white.svg">
+        </div>
+        <div class="caixa">
+            <div class="login">
+                <div class="fundo">
+                    <div class="conteudo">
+                        <p id="titulo">Faça seu Login</p>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF" oninput="mascara(this)">
+                        <input type="password" name="password" id="senha" placeholder="Senha" onfocus="correcao();">
+
+                        <p id="senha-incorreta">CPF e senha não correspondem.</p>
+
+                        <button id="entrar" onclick="fazerLogin();">CONTINUAR</button>
+
+                        <div class="link-ajuda">
+                            <p><a href="">Esqueci minha senha ></a></p>
+                            <p><a href="">Ainda não sou cliente ></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="texto_footer">
+                <h1>THIAGO MARQUES SOUSA</h1>
+                <h2> - NENHUM DIREITO RESERVADO - </h2>
+            </div>
+        </div>
+    </body>
+</html>
